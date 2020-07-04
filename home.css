@@ -1,0 +1,530 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body
+{
+    font-family:monospace;
+}
+nav
+{
+    background:white;
+    height: 80px;
+    width: 100%
+}
+.logo
+{
+    color: #F79F1F;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+.ul
+{
+    float: right;
+    margin-right: 20px;
+}
+.ul li
+{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    font-size: 20px;
+    
+}
+.ul li a
+{
+    color: #2d3436;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.a.active,a:hover
+{
+    background: #353b48;
+    transition: .5s;
+    
+}
+.active,a:hover
+{
+    background: #d2dae2;
+    transition: .5s;
+}
+.check-btn
+{
+    font-size: 30px;
+    color: #F79F1F ;
+    float: right;
+    line-height: 80px;
+    margin-right: 35px;
+    cursor: pointer;
+    display: none;
+}
+#check
+{
+    display: none;
+    
+}
+@media (max-width:952px){
+    .logo{
+        font-size: 30px;
+        padding-left: 50px;
+        
+    }
+
+    .ul li a{
+        font-size: 16px;
+        
+    }
+}
+@media (max-width:858px){
+    .check-btn{
+        display: block;
+        
+    }
+    
+    .ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s
+    }
+    .ul li{
+        display: block;
+    }
+    .ul li a{
+        font-size: 20px;
+    }
+    .a:hover,a.active{
+        background: none;
+        color: #0082e6;
+        
+    }
+    .active,a:hover
+{
+    background: #1b9bff;
+    transition: .5s;
+}
+    #check:checked~ul{
+        left: 0;
+    }
+}
+.davinci{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(dav%203.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: inherit;
+}
+
+.Raphael{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 50%;
+    padding-bottom: 20%;
+    background-image: url(Raphael.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: inherit;
+}
+
+.text1{
+        margin-left: 7%;
+        padding-top: 10%;
+        padding-bottom: 6%;
+        color: aliceblue;
+    }
+.bondok{
+    margin-left: 7%;
+    padding-top: 80%;
+    padding-bottom: 30%;
+    color: aliceblue;
+}
+.button1
+{
+    margin-top: 30px;
+    margin-left: 50px
+   
+}
+
+.btn1
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.btn1
+{
+    background-color: darkorange;
+    font-family: "Roboto" sans-serif;
+}
+@media only screen and (min-width: 1000px){
+    .bondok{
+        margin-left: 7%;
+        padding-top: 25%;
+        padding-bottom: 20%;
+        color: aliceblue;
+    }
+    .davinci{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        background-image: url(dav%201.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: inherit;
+    }
+    .Raphael{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 10%;
+        background-image: url(Raphael3.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    .text1{
+        margin-left: 7%;
+        padding-top: 10%;
+        padding-bottom: 6%;
+        color: #fff;
+    }
+    .red{
+        color: red;
+    }
+}
+
+
+.gallery-section{
+    
+    width: 100%;
+    padding: 60px 0;
+    background: #f1f1f1;
+    
+}
+
+.inner-width{
+    
+    
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    
+}
+
+.gallery-section h1{
+    
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    
+}
+
+.border {
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 60px auto;
+    
+}
+
+.gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    
+}
+
+.gallery-section .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.gallery-section .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    
+}
+
+.gallery-section .image:hover img{
+    transform: scale(1.4) rotate(15deg);
+    
+}
+
+@media screen and (max-width:960px){
+    
+    .gallery-section .image{
+        flex: 33.33%;
+        
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    .gallery-section .image{
+        flex: 50%;
+        
+    }
+}
+
+@media screen and (max-width:480px){
+    
+    .gallery-section .image{
+        flex: 100%;
+        
+    }
+}
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+.team-section{
+    overflow:hidden;
+    text-align:center;
+    background:#34495e;
+    padding:60px;
+
+
+}
+.team-section h1
+{
+    text-transform:uppercase;
+    margin-bottom:60px;
+    color:white;
+    font-size:40px;
+
+}
+.border
+{
+    display:block;
+    margin:auto;
+    width:160px;
+    height:3px;
+    background:#3498db;
+    margin-bottom:40px;
+}
+.ps
+{
+    margin-bottom:40px;
+}
+.ps a
+{
+    display:inline-block;
+    margin:0 30px;
+    width:160px;
+    height:160px;
+    overflow:hidden;
+    border-radius:50%;
+}
+.ps a img
+{
+    filter:grayscale(100%);
+    transition:0.4s all;
+
+}
+.ps a:hover >img
+{
+    filter:none;
+
+}
+.Section
+{
+    margin-bottom:30px;
+    width:300px;
+    margin:auto;
+    font-size:20px;
+    color:white;
+    text-align:justify;
+    height:0;
+    overflow:hidden;
+}
+.Section:target
+{
+    height:auto;
+}
+.name
+{
+    display:block;
+    margin-bottom:30px;
+    text-align:center;
+    text-transform:uppercase;
+    font-size:22px;
+
+
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    color: #d9d9d9;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    
+}
+
+footer{
+    position: block;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+.main-content{
+    display:flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box .content h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box.content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+
+}
+.content p{
+    text-align: justify;
+}
+.social{
+    margin: 20px 0 0 0;
+}
+.social a{
+    padding: 0 2px;
+}
+.social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition:0.3s;
+}
+.social a span:hover{
+    background: #f12020;
+}
+.fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 35px;
+    width: 40px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition:0.3s;
+    cursor: pointer;
+
+}
+.fas:hover{
+    background: #f12020;
+}
+.content.text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;   
+}
+.content.phone {
+    margin: 10 0px;
+}
+.text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color:#656565;
+}
+ .msg{
+    margin-top:10px;
+
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625;
+    background: #151515;
+    padding-left: 10px;
+    border:1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form input {
+    height: 35px;
+}
+.right form .btn{
+    margin-top: 10px;
+
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s
+}
+.right form .btn button:hover{
+    background: #000;
+}
+@media screen and (max-width: 900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction:column;
+    }
+    .main-content.box{
+        margin: 5px 0;
+
+    }
+}
