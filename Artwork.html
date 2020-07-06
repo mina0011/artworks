@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Artworks</title>
+    <link rel="stylesheet" href="Artwork.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="images.png">
+      
+              <style>
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+      
+      
+  </head>
+  <body>
+     
+    <nav>
+      <ul>
+<li class="logo" style="font-size: large;font-size: 35px;font-weight: bold;"><span style="color: red;">el</span><span style="color: white;">fn</span><span style="color: green;">an</span></li>
+<li class="items"><a href="home.html">Home</a></li>
+<li class="items"><a href="about.html">About</a></li>
+<li class="items"><a href="Artwork.html">Artworks</a></li>
+<li class="items"><a href="#1">Contact</a></li>
+<li class="items"><a href="index.html">Log out</a></li>
+<li class="btn" style="color: black;"><a href="#" style="color: white;"><i class="fas fa-bars"></i></a></li>
+</ul>
+</nav>
+          
+    <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+    </script>
+      
+      
+      <br><br>
+      
+      <h2 style="color:darkorange; font-size: large;font-size: 24px;font-weight: bold; text-align: center;">Leonardo da Vinci</h2>
+      <br>
+<h4 style="color:darkgreen; font-size: large;font-size: 24px;font-weight: bold; text-align: center;">Some of the artworks by the painter Leonardo da Vinci.</h4>
+<br><br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/Salvator%20Mundi.jpg">
+      <img src="artworkspic/Salvator%20Mundi.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Salvator Mundi is a painting by Italian Renaissance artist Leonardo da Vinci dated to c. 1500. Long thought to be a copy of a lost original veiled with overpainting, it was rediscovered, restored, and included in a major Leonardo exhibition at the National Gallery, London, in 2011–12. </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg">
+      <img src="artworkspic/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Lady with an Ermine is a portrait painting from 1489–1490 by Italian artist Leonardo da Vinci. Painted in oil on walnut panel, it is housed in the Czartoryski Museum and is one of Poland's national treasures.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/Saint%20John%20the%20Baptist.jpg">
+      <img src="artworkspic/Saint%20John%20the%20Baptist.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Saint John the Baptist is a High Renaissance oil painting on walnut wood by Leonardo da Vinci. Probably completed from 1513 to 1516, it is believed to be his final painting. The original size of the painting was 69 × 57 cm. It is now exhibited at the Musée du Louvre in Paris, France. </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/The%20Baptism%20of%20Christ%201.jpg">
+      <img src="artworkspic/The%20Baptism%20of%20Christ%201.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">The Baptism of Christ is a painting finished around 1475 in the studio of the Italian Renaissance painter Andrea del Verrocchio and generally ascribed to him and his pupil Leonardo da Vinci. Some art historians discern the hands of other members of Verrocchio's workshop in the painting as well. </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<br><br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/The%20Madonna%20Litta.jpg" >
+      <img src="artworkspic/The%20Madonna%20Litta.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">The Madonna Litta is a late 15th-century painting, traditionally attributed to Leonardo da Vinci, in the Hermitage Museum, Saint Petersburg. It depicts the Virgin Mary breastfeeding the Christ child, a devotional subject known as the Madonna lactans. </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/The%20Madonna%20of%20the%20Carnation.jpg">
+      <img src="artworkspic/The%20Madonna%20of%20the%20Carnation.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">The Madonna of the Carnation, also known as the Madonna with Vase, Madonna with Child or Virgin with Flower, is a Renaissance oil painting by Leonardo da Vinci created around 1478–1480. It is permanently displayed at the Alte Pinakothek gallery in Munich, Germany.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/Madonna%20and%20Child%20with%20Flowers.jpg">
+      <img src="artworkspic/Madonna%20and%20Child%20with%20Flowers.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Madonna and Child with Flowers, otherwise known as the Benois Madonna, could be one of two Madonnas Leonardo da Vinci had commented on having started in October 1478. The other one could be Madonna of the Carnation from Munich.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/Bacchus.jpg">
+      <img src="artworkspic/Bacchus.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Bacchus, formerly Saint John the Baptist, is a painting in the Musée du Louvre, Paris, France, based on a drawing by the Italian Renaissance artist Leonardo da Vinci. It is presumed to have been executed by an unknown follower, perhaps in Leonardo's workshop.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<br><br>
+ 
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/The%20Mona%20Lisa.jpg">
+      <img src="artworkspic/The%20Mona%20Lisa.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. It is considered an archetypal masterpiece of the Italian Renaissance, and has been described as "the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world". </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/The%20Battle%20of%20Anghiari.jpg">
+      <img src="artworkspic/The%20Battle%20of%20Anghiari.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">The Battle of Anghiari is a lost painting by Leonardo da Vinci, at times referred to as "The Lost Leonardo", which some commentators believe to be still hidden beneath one of the later frescoes in the Salone dei Cinquecento in the Palazzo Vecchio, Florence.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/head%20of%20christ.jpg">
+      <img src="artworkspic/head%20of%20christ.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Head of Christ is a c.1494 chalk and pastel study by Leonardo da Vinci for his The Last Supper. It measures 40 by 32 cm and is now in the Pinacoteca di Brera.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/Portrait%20of%20a%20Musician.jpg">
+      <img src="artworkspic/Portrait%20of%20a%20Musician.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Portrait of a Musician is an unfinished portrait painting widely attributed to Italian Renaissance polymath Leonardo da Vinci, dated c. 1483–1487. Painted in oil on walnut panel, it is Leonardo's only known male portrait, whose identity is unknown, and has been closely debated among scholars.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<br><br>
+<h2 style="color:darkorange; font-size: large;font-size: 24px;font-weight: bold; text-align: center;">Raffaello Sanzio da Urbino</h2>
+      <br>
+<h4 style="color:darkgreen; font-size: large;font-size: 24px;font-weight: bold; text-align: center;">Some of the artworks by the painter Raffaello Sanzio da Urbino.</h4>
+
+      <br><br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/St.%20George%20and%20the%20Dragon.jpg">
+      <img src="artworkspic/St.%20George%20and%20the%20Dragon.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">St. George and the Dragon is a small cabinet painting by the Italian High Renaissance artist Raphael, painted between 1504 and 1506, and now in the National Gallery of Art in Washington, D.C.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/St.%20Michael.jpg">
+      <img src="artworkspic/St.%20Michael.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">St. Michael is an oil painting by Italian artist Raphael. Also called the Little St. Michael to distinguish it from a larger, later treatment of the same theme, St. Michael Vanquishing Satan, it is housed in the Louvre in Paris</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/The%20Deposition.jpg">
+      <img src="artworkspic/The%20Deposition.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">The Deposition, also known as the Pala Baglione, Borghese Entombment or The Entombment, is an oil painting by the Italian High Renaissance painter Raphael. Signed and dated "Raphael. Urbinas. MDVII", the painting is in the Galleria Borghese in Rome.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/The%20Sistine%20Madonna.jpg">
+      <img src="artworkspic/The%20Sistine%20Madonna.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">The Sistine Madonna, also called the Madonna di San Sisto, is an oil painting by the Italian artist Raphael. The painting was commissioned in 1512 by Pope Julius II for the church of San Sisto, Piacenza. The canvas was one of the last Madonnas painted by Raphael.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<br><br>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/he%20Marriage%20of%20the%20Virgin.jpg">
+      <img src="artworkspic/he%20Marriage%20of%20the%20Virgin.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">The Marriage of the Virgin, also known as Lo Sposalizio, is an oil painting by the Italian High Renaissance artist Raphael. Completed in 1504 for the Franciscan church of San Francesco, Città di Castello, the painting depicts a marriage ceremony between Mary and Joseph.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/La%20velata.jpg">
+      <img src="artworkspic/La%20velata.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">La velata, or La donna velata, is a well known portrait by the Italian Renaissance painter Raphael. The subject of the painting appears in another portrait, La Fornarina, and is traditionally identified as the fornarina Margherita Luti, Raphael's Roman mistress.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/Disputation%20of%20the%20Sacrament.jpg">
+      <img src="artworkspic/Disputation%20of%20the%20Sacrament.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">The Disputation of the Sacrament, or Disputa, is a painting by the Italian Renaissance artist Raphael. It was painted between 1509 and 1510 as the first part of Raphael's commission to decorate with frescoes the rooms that are now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/The%20Triumph%20of%20Galatea.jpg">
+      <img src="artworkspic/The%20Triumph%20of%20Galatea.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">The Triumph of Galatea is a fresco completed in around 1514 by the Italian painter Raphael for the Villa Farnesina in Rome. The Farnesina was built for the Sienese banker Agostino Chigi, one of the richest men of that age.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<br><br>
+ 
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/Portrait%20of%20Pope%20Julius%20II.jpg">
+      <img src="artworkspic/Portrait%20of%20Pope%20Julius%20II.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Portrait of Pope Julius II is an oil painting of 1511–12 by the Italian High Renaissance painter Raphael. The portrait of Pope Julius II was unusual for its time and would carry a long influence on papal portraiture.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/Portrait%20of%20Baldassare%20Castiglione.jpg">
+      <img src="artworkspic/Portrait%20of%20Baldassare%20Castiglione.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Portrait of Baldassare Castiglione is a c. 1514–1515 oil painting attributed to the Italian High Renaissance painter Raphael. Considered one of the great portraits of the Renaissance, it has an enduring influence.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/The%20Portrait%20of%20Pope%20Leo%20X%20with%20two%20Cardinals.jpg">
+      <img src="artworkspic/The%20Portrait%20of%20Pope%20Leo%20X%20with%20two%20Cardinals.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">The Portrait of Pope Leo X with two Cardinals is a painting by the Italian High Renaissance master Raphael, c. 1517. It is housed in the Uffizi Gallery of Florence. In contrast to works depicting classical, idealised Madonnas and figures from antiquity, this portrait shows the sitter in a realistic manner.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="artworkspic/St.%20Sebastian.jpg">
+      <img src="artworkspic/St.%20Sebastian.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">St. Sebastian is a painting of early Christian saint and martyr Saint Sebastian by the Italian High Renaissance artist Raphael, c. 1501-1502. Part of his early works, it is housed in the Accademia Carrara of Bergamo, Italy.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <br><br>
+      
+      
+      <footer id="1">
+          <div class="main-content">
+            <div class="left-box">
+              <h2 style="color: white;">
+                About Us
+              </h2>
+              <div class="content" style="color: white;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. 
+                <div class="social">
+                  <a href="#"><span style="color: white;" id="bob" class="fab fa-facebook-f"></span></a>
+                  <a href="#"><span style="color: white;" id="bob" class="fab fa-twitter"></span></a>
+                  <a href="#"><span style="color: white;" id="bob" class="fab fa-instagram"></span></a>
+                  <a href="#"><span style="color: white;" id="bob"  class="fab fa-youtube"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="center box">
+              <h2 style="color: white;">Address</h2>
+              <div class="content">
+                <div class="place">
+                  <span  class="fas fa-map-marker-alt" style="color: white;"></span>
+                  <span class="text">el fayoum , el zamelk</span>
+                </div>
+                <div class="phon">
+                  <span  class="fas fa-phone-alt" style="color: white;"></span>
+                  <span class="text">+2001226364389 - +2001208485452 
+                  </span>
+                </div>
+                <div class="email">
+                  <span  class="fas fa-envelope" style="color: white;"></span>
+                  <span class="text">abanoubnaser73@gmail.com-minawagdy429@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="right box">
+            <h2 style="color: white;">Contact Us</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Email*</div>
+                  <input type="email"  required>
+                </div>
+                <div class="msg">
+                  <div class="text">message*</div>
+                  <textarea rows="6" cols="25" required></textarea>
+                  
+                </div>
+                <div class="btn">
+                  <button type="submit" style="color: white;">send</button>
+                  
+                </div>
+                
+
+              </form>
+              
+            </div>
+            
+          </div>
+            
+          </div>
+          
+
+         </footer>
+  </body>
+</html>
