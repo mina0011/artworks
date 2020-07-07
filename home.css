@@ -383,6 +383,8 @@ nav ul li.btn.hide i:before{
     
 }
 
+
+
 footer{
     position: block;
     bottom: 0px;
@@ -444,7 +446,7 @@ footer{
 .social a span:hover{
     background: #f12020;
 }
-.fas{
+.bob{
     font-size: 1.4375rem;
     background: #1a1a1a;
     height: 35px;
@@ -456,7 +458,7 @@ footer{
     cursor: pointer;
 
 }
-.fas:hover{
+.bob:hover{
     background: #f12020;
 }
 .content.text{
